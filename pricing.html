@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pricing - Rabbit Fresh | Neer Investment</title>
+  <meta name="description" content="Wholesale and retail pricing for Rabbit Fresh cleaning and hygiene products by Neer Investment.">
+  <meta name="keywords" content="Rabbit Fresh, Neer Investment, cleaning products, wholesale, Tanzania">
+
+  <!-- Favicons -->
+ <link href="assets/img/logo.webp" rel="icon">
+ <link href="assets/img/logo.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Professional pricing enhancements */
+    .pricing-item {
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      height: 100%;
+      background: #fff;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .pricing-item:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .pricing-item.recommended {
+      border: 2px solid #0d6efd;
+      box-shadow: 0 8px 25px rgba(13, 110, 253, 0.15);
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0d6efd;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .pricing-item h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.25rem;
+    }
+
+    .pricing-item .product-desc {
+      font-size: 0.875rem;
+      color: #6c757d;
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .pricing-item h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-item h4 sup {
+      font-size: 1rem;
+      top: -0.75rem;
+    }
+
+    .pricing-item h4 span {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #6c757d;
+    }
+
+    .pricing-item ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      text-align: left;
+    }
+
+    .pricing-item ul li {
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      color: #495057;
+      border-bottom: 1px solid #f1f3f5;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pricing-item ul li:last-child {
+      border-bottom: none;
+    }
+
+    .pricing-item ul li i {
+      color: #198754;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .pricing-item ul li.na {
+      color: #adb5bd;
+      text-decoration: line-through;
+    }
+
+    .pricing-item ul li.na i {
+      color: #dc3545;
+    }
+
+    .btn-buy {
+      display: inline-block;
+      background: #0d6efd;
+      color: #fff;
+      padding: 0.65rem 2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-buy:hover {
+      background: #0b5ed7;
+      color: #fff;
+    }
+
+    .btn-buy.btn-outline {
+      background: transparent;
+      color: #0d6efd;
+      border: 2px solid #0d6efd;
+    }
+
+    .btn-buy.btn-outline:hover {
+      background: #0d6efd;
+      color: #fff;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title p {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    .table-pricing th {
+      background: #0d6efd;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      vertical-align: middle;
+    }
+
+    .table-pricing td {
+      font-size: 0.9rem;
+      vertical-align: middle;
+    }
+
+    .table-pricing .price-cell {
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    .table-pricing .pack-cell {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
+
+    .contact-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 2rem;
+      border-left: 4px solid #0d6efd;
+    }
+
+    .contact-card i {
+      color: #0d6efd;
+      font-size: 1.25rem;
+    }
+
+    .contact-card a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="pricing-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center light-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:investmentneer26@gmail.com">investmentneer26@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+255 796 617 333</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+           <img src="assets/img/logo.webp" alt="Rabbit Fresh Logo"> 
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home<br></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="portfolio.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Distribution</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Retail Partnerships</a></li>
+                    <li><a href="#">Supermarket Supply</a></li>
+                    <li><a href="#">Institutional Supply</a></li>
+                    <li><a href="#">B2B Orders</a></li>
+                    <li><a href="#">Become a Distributor</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Why Rabbit Fresh?</a></li>
+                <li><a href="about.html">Vision & Mission</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Wholesale & Retail Pricing</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pricing</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <div class="container">
+
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Rabbit Fresh Product Pricing</h2>
+          <p>Quality cleaning and hygiene products by Neer Investment — available in 500ml, 1L, 5L, and 800g bar soap cartons.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <!-- Multipurpose Cleaner -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Multipurpose Cleaner</h3>
+              <p class="product-desc">Versatile cleaning solution for floors, tiles, windows, kitchen surfaces, bathrooms, and washable furniture.</p>
+              <h4><sup>TSh</sup>43,000<span> / 5L carton (4 pcs)</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> 5L — TSh 43,000 / carton (4 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 1L — TSh 28,000 / carton (12 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 500ml — Available on request</li>
+                <li><i class="bi bi-check-circle-fill"></i> Variants: Lemon, Pure Rose, Yellow Lemon, Glass</li>
+                <li><i class="bi bi-check-circle-fill"></i> Suitable for homes, offices & commercial spaces</li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Disinfectant Cleaner -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item recommended">
+              <span class="recommended-badge">Best Value</span>
+              <h3>Disinfectant Cleaner</h3>
+              <p class="product-desc">Helps disinfect washable surfaces while leaving them clean and fresh — ideal for hygiene-critical environments.</p>
+              <h4><sup>TSh</sup>43,000<span> / 5L carton (4 pcs)</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> 5L — TSh 43,000 / carton (4 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 1L — TSh 28,000 / carton (12 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 500ml — Available on request</li>
+                <li><i class="bi bi-check-circle-fill"></i> Variants: Ocean Fresh, Fresh Leef</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ideal for hotels, restaurants, offices & institutions</li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Dishwash -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Dishwash Liquid</h3>
+              <p class="product-desc">Tough on grease, gentle on your cleaning routine — effective foam for everyday dishwashing.</p>
+              <h4><sup>TSh</sup>43,000<span> / 5L carton (4 pcs)</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> 5L — TSh 43,000 / carton (4 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 1L — TSh 35,000 / carton (12 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 500ml — Available on request</li>
+                <li><i class="bi bi-check-circle-fill"></i> Variants: Apple Blossom, Lemon Fresh</li>
+                <li><i class="bi bi-check-circle-fill"></i> Removes grease, oil & food residue effectively</li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Handwash -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Handwash</h3>
+              <p class="product-desc">Liquid hand-cleaning soap for everyday hand hygiene — leaves hands clean, fresh, and lightly fragranced.</p>
+              <h4><sup>TSh</sup>27,000<span> / carton (12 pcs)</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> 1L — TSh 27,000 / carton (12 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 500ml — Available on request</li>
+                <li><i class="bi bi-check-circle-fill"></i> Variants: Citrus, Strawberry Fresh</li>
+                <li><i class="bi bi-check-circle-fill"></i> Rich lather, ideal for frequent handwashing</li>
+                <li><i class="bi bi-check-circle-fill"></i> Suitable for homes, offices, schools & hospitality</li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Bar Soap -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item">
+              <h3>Bar Soap</h3>
+              <p class="product-desc">Multi-purpose laundry bar soap — strong on stains, gentle on fabrics, and economical for daily washing.</p>
+              <h4><sup>TSh</sup>74,000<span> / carton (25 pcs)</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> 800g — TSh 74,000 / carton (25 pcs)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Multi-purpose laundry soap</li>
+                <li><i class="bi bi-check-circle-fill"></i> Product of Tanzania</li>
+                <li><i class="bi bi-check-circle-fill"></i> "Usafi wa Kweli Kila Siku"</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ideal for households & commercial laundry</li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Wholesale / Distribution -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Wholesale & Distribution</h3>
+              <p class="product-desc">Partner with Neer Investment as a wholesaler, retailer, supermarket, distributor, or institutional buyer.</p>
+              <h4><sup>Custom</sup> Pricing<span> / bulk orders</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Wholesale orders</li>
+                <li><i class="bi bi-check-circle-fill"></i> Supermarket supply</li>
+                <li><i class="bi bi-check-circle-fill"></i> Distributor partnerships</li>
+                <li><i class="bi bi-check-circle-fill"></i> Institutional supply</li>
+                <li><i class="bi bi-check-circle-fill"></i> Business-to-business orders</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="contact.html" class="btn-buy btn-outline">Request Quote</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Contact / Order Section -->
+    <section id="contact-order" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card">
+              <h3 class="mb-3">Ready to Order?</h3>
+              <p class="mb-4">Reach out to Neer Investment for wholesale pricing, distribution partnerships, or product inquiries.</p>
+              <div class="row gy-3">
+                <div class="col-md-6 d-flex align-items-center gap-2">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span><a href="tel:+255796617333">+255 796 617 333</a></span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center gap-2">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span><a href="mailto:investmentneer26@gmail.com">investmentneer26@gmail.com</a></span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center gap-2">
+                  <i class="bi bi-globe"></i>
+                  <span><a href="https://www.neerinvestment.co.tz" target="_blank">www.neerinvestment.co.tz</a></span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center gap-2">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Sungwi Street, Temeke, Dar es Salaam</span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center gap-2">
+                  <i class="bi bi-instagram"></i>
+                  <span><a href="#" target="_blank">@NEERINVESTMENT</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Order Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Clean Home, Happy Home</h3>
+            <p>Rabbit Fresh products are developed to deliver a fresh, clean, and hygienic experience — while offering customers value for money. Stock up today or become a distribution partner.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Rabbit Fresh</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Sungwi Street, Temeke</p>
+              <p>Dar es Salaam, Tanzania</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+255 796 617 333</span></p>
+              <p><strong>Email:</strong> <span>investmentneer26@gmail.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><a href="pricing.html">Multipurpose Cleaner</a></li>
+              <li><a href="pricing.html">Disinfectant Cleaner</a></li>
+              <li><a href="pricing.html">Dishwash Liquid</a></li>
+              <li><a href="pricing.html">Handwash</a></li>
+              <li><a href="pricing.html">Bar Soap</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Wholesale</h4>
+            <ul>
+              <li><a href="contact.html">Wholesale Orders</a></li>
+              <li><a href="contact.html">Supermarket Supply</a></li>
+              <li><a href="contact.html">Distributor Partnerships</a></li>
+              <li><a href="contact.html">Institutional Supply</a></li>
+              <li><a href="contact.html">B2B Orders</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+255796617333">+255 796 617 333</a></li>
+              <li><a href="mailto:investmentneer26@gmail.com">investmentneer26@gmail.com</a></li>
+              <li><a href="https://www.neerinvestment.co.tz" target="_blank">www.neerinvestment.co.tz</a></li>
+              <li><a href="#">@NEERINVESTMENT</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>Neer Investment</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
